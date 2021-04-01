@@ -40,7 +40,7 @@ pub fn complexpam(username: &str, password: &str){
     // proper user or as root
     match sessionstatus {
         Ok(()) => {
-            println!("This get run");
+            println!("Opening Linux Pam Session Successfully");
             let user = get_user_by_name(username).unwrap();
             let error = Command::new("/bin/bash")
             .uid(user.uid())
