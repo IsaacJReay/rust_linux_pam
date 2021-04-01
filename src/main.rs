@@ -7,7 +7,7 @@ fn main() {
 
     // First, prompt the user for a login and a password
     let mut username = String::new();
-    print!("Username: ")
+    print!("Username: ");
     stdout().flush().unwrap();
     stdin().read_line(&mut username).unwrap();
     username.pop(); // remove the trailing '\n'
